@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-const exchangeRoutes = require('./routes/exchangeRoutes');
+const exchangeRoutes = require('./src/routes/exchangeRoutes');
 app.use('/api/exchange', exchangeRoutes);
 
 app.listen(port, () => {
