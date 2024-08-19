@@ -82,11 +82,11 @@ Response:
 
 -   Query Parameters:
 
--   from: Currency code to convert from (e.g., USD)
+  -   from: Currency code to convert from (e.g., USD)
 
--   to: Currency code to convert to (e.g., EUR)
+  -   to: Currency code to convert to (e.g., EUR)
 
--   amount: Amount to convert (e.g., 100)
+  -   amount: Amount to convert (e.g., 100)
 
 Response:
 ```json
@@ -106,7 +106,7 @@ Response:
 Error Handling
 --------------
 
-In case of an error, the API will return a 500 status code with a descriptive error message.
+In case of an error, the API will return a 500 status code with an error message.
 
 Contact
 -------
