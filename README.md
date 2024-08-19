@@ -78,15 +78,12 @@ Response:
 
 ### Convert Currency
 
--   Endpoint:  GET /api/exchange/convert
+- **Endpoint:** `GET /api/exchange/rates`
+- **Query Parameters:**
+  - `from`: Currency code to convert from (e.g., `USD`)
+  - `to`: Currency code to convert to (e.g., `EUR`)
+  - `amount`: Amount to convert (e.g., `100`)
 
--   Query Parameters:
-
-  *  from: Currency code to convert from (e.g., USD)
-
-  *   to: Currency code to convert to (e.g., EUR)
-
-  *   amount: Amount to convert (e.g., 100)
 
 Response:
 ```json
