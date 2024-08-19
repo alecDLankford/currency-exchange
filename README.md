@@ -55,11 +55,11 @@ API Endpoints
 
 *   Query Parameters:
 
-  -   from: Currency code to convert from (e.g., USD)
+-   from: Currency code to convert from (e.g., USD)
 
-  -   to: Currency code to convert to (e.g., EUR)
+-   to: Currency code to convert to (e.g., EUR)
 
-  -   amount: Amount to convert (e.g., 100)
+-   amount: Amount to convert (e.g., 100)
 
 Response:
 ```json
