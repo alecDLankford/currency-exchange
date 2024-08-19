@@ -41,7 +41,7 @@ Installation
 
 6\. Start the server:
 ```bash
-  npm start
+  node src/index.js
 ```
 
 7\.  The server will run on http://localhost:3000 or the port specified in the .env file.
