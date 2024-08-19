@@ -1,7 +1,7 @@
 Currency Exchange Service
 =========================
 
-The Currency Exchange Service is a Node.js application built with Express that provides endpoints for retrieving exchange rates and converting currencies. It uses the[ExchangeRate-API](https://www.exchangerate-api.com/) for fetching exchange rates and Google Cloud Secret Manager for managing secrets securely. You can replace Google Secret Manager with your preferred secret management solution if desired.
+The Currency Exchange Service is a Node.js application built with Express that provides endpoints for retrieving exchange rates and converting currencies. It uses the [ExchangeRate-API](https://www.exchangerate-api.com/) for fetching exchange rates and Google Cloud Secret Manager for managing secrets securely. You can replace Google Secret Manager with your preferred secret management solution if desired.
 
 Features
 --------
@@ -15,38 +15,36 @@ Features
 Installation
 ------------
 
-Clone the repository:\
-git clone https://github.com/your-username/your-repo.git
+1.\ **Clone the repository:**
+```bash
+  git clone https://github.com/your-username/your-repo.git
+```
 
-1.
+2\. **Navigate to the project directory:**
+```bash
+  cd your-repo
+```
 
-Navigate to the project directory:\
-cd your-repo
+3\. Install dependencies:
+```bash
+  npm install
+```
 
-1.
+4\. Set up environment variables: Create a .env file in the root directory and add the following
+```bash
+  PORT=3000
+  PROJECT_ID=your-google-cloud-project-id
+  SECRET_ID=your-secret-id
+```
 
-Install dependencies:\
-npm install
+5\. You can replace the secret management setup in src/helpers/gsm.js with your preferred method if you're not using Google Cloud Secret Manager.
 
-1.
-
-Set up environment variables: Create a .env file in the root directory and add the following variables:\
-plaintext\
-Copy code\
-PORT=3000
-
-PROJECT_ID=your-google-cloud-project-id
-
-SECRET_ID=your-secret-id
-
-1.  You can replace the secret management setup in src/helpers/gsm.js with your preferred method if you're not using Google Cloud Secret Manager.
-
-Start the server:\
+6\. Start the server:
 ```bash
   npm start
 ```
 
-1.  The server will run on http://localhost:3000 or the port specified in the .env file.
+7\.  The server will run on http://localhost:3000 or the port specified in the .env file.
 
 API Endpoints
 -------------
